@@ -1,0 +1,28 @@
+{
+  "name": "lit-actions-ts-bundling",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "bun esbuild.config.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./src/index.ts"
+    }
+  },
+  "module": "./src/index.ts",
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  },
+  "dependencies": {
+    "@penumbra-zone/wasm": "^37.0.0",
+    "bip39": "^3.1.0",
+    "ethers": "^5.7.2",
+    "polywasm": "^0.2.0"
+  }
+}
